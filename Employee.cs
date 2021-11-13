@@ -12,7 +12,18 @@ namespace csharp_oop_1_demo
         public Employee()
         {
             Salary = 0;
-            Console.WriteLine("Wywołano konstruktor bezparamtrowy z Employee");
+            Console.WriteLine("Wywołano konstruktor bezparametrowy z Employee");
+        }
+
+        public Employee(string firstName, string lastName, int yearOfBirth, decimal salary) :
+            base(firstName, lastName, yearOfBirth)
+        {
+            //FirstName = firstName;
+            ////this._firstName = "";
+            //LastName = lastName;
+            //YearOfBirth = yearOfBirth;
+            Salary = salary;
+            Console.WriteLine("Wywołano konstruktor z parametrami z Employee");
         }
 
         public decimal Salary { get; set; }

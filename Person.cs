@@ -8,7 +8,19 @@ namespace csharp_oop_1_demo
 {
     class Person
     {
-        public string FirstName { get; set; }
+        private string _firstName;
+        public string FirstName
+        {
+            get
+            {
+                return _firstName;
+            }
+            set
+            {
+                _firstName = value;
+            }
+
+        }
         public string LastName { get; set; }
         public int YearOfBirth { get; set; }
 
@@ -19,6 +31,12 @@ namespace csharp_oop_1_demo
             YearOfBirth = yearOfBirth;
 
             Console.WriteLine("Wywołano konstruktor z parametrami z Person");
+        }
+
+        public Person(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
         }
 
         public Person() : this("NIEZNANY", "NIEZNANY", 1900)

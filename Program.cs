@@ -14,6 +14,8 @@ namespace csharp_oop_1_demo
             };
             employee.WhoAmI();
             Console.WriteLine(employee.IsAdult());
+
+            Employee secondEmployee = new Employee("Jan", "Kowalski", 1981, 5000);
         }
     }
 }
