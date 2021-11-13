@@ -7,31 +7,14 @@ namespace csharp_oop_1_demo
     {
         static void Main(string[] args)
         {
-            List<Person> people = new List<Person>();
+            List<Employee> employees = new List<Employee>();
+            employees.Add(new Employee("Jan", "Kowalski", 1990, 5000));
+            employees.Add(new Manager("Adam", "Nowak", 1990, 5000));
 
-            Employee employee = new Employee("Jan", "Kowalski", 1981, 5000);
-            employee.WhoAmI();
-            Person person = new Person("Anna", "Nowak", 1982);
-            person.WhoAmI();
-
-            people.Add(employee);
-            people.Add(person);
-
-            foreach (var p in people)
+            foreach (var e in employees)
             {
-                Console.WriteLine(p.GetType());
-                Console.WriteLine("---");
-                p.WhoAmI();
-                Console.WriteLine("---");
-                Console.WriteLine(p);
+                Console.WriteLine(e);
             }
-
-            Dummy d = new Dummy();
-        }
-
-        public void PrintHello(Person p)
-        {
-            p.WhoAmI();
         }
     }
 }

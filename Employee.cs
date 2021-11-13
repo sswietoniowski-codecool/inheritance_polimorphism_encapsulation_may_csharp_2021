@@ -30,7 +30,12 @@ namespace csharp_oop_1_demo
 
         public override string ToString()
         {
-            return base.ToString() + $"{Environment.NewLine}Salary: {Salary}";
+            return base.ToString() + $"{Environment.NewLine}Salary: {GetSalary()}";
+        }
+
+        public virtual decimal GetSalary()
+        {
+            return Salary;
         }
     }
 }

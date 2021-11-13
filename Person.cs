@@ -46,7 +46,7 @@ namespace csharp_oop_1_demo
 
         public void WhoAmI()
         {
-            Console.WriteLine(this);
+            Console.WriteLine(this.ToString());
         }
 
         public override string ToString()
