@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using DummyLibrary;
 
 namespace csharp_oop_1_demo
 {
