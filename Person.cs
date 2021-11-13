@@ -46,8 +46,12 @@ namespace csharp_oop_1_demo
 
         public void WhoAmI()
         {
-            //Console.WriteLine("My Name is " + LastName + ". " + FirstName + " " + LastName + ".");
-            Console.WriteLine($"My Name is {LastName}. {FirstName} {LastName}.");
+            Console.WriteLine(this);
+        }
+
+        public override string ToString()
+        {
+            return $"My Name is {LastName}. {FirstName} {LastName}.";
         }
 
         public bool IsAdult() => DateTime.Today.Year - YearOfBirth >= 18;
