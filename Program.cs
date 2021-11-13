@@ -6,7 +6,6 @@ namespace csharp_oop_1_demo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
