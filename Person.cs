@@ -4,7 +4,19 @@ namespace csharp_oop_1_demo
 {
     public class Person
     {
-        public string FirstName { get; set; }
+        private string _firstName;
+        public string FirstName
+        {
+            get
+            {
+                return _firstName;
+            }
+            set
+            {
+                _firstName = value;
+            }
+
+        }
         public string LastName { get; set; }
         public int YearOfBirth { get; set; }
 
@@ -13,14 +25,27 @@ namespace csharp_oop_1_demo
             FirstName = firstName;
             LastName = lastName;
             YearOfBirth = yearOfBirth;
+
+            Console.WriteLine("Wywołano konstruktor z parametrami z Person");
         }
-        
+
+        public Person(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
+
+        public Person() : this("NIEZNANY", "NIEZNANY", 1900)
+        {
+            Console.WriteLine("Wywołano konstruktor bezparametrowy z Person");
+        }
 
         public void WhoAmI()
         {
+            //Console.WriteLine("My Name is " + LastName + ". " + FirstName + " " + LastName + ".");
             Console.WriteLine($"My Name is {LastName}. {FirstName} {LastName}.");
         }
 
-        public bool IsAdult() => (DateTime.Now.Year - YearOfBirth) >= 18;
+        public bool IsAdult() => DateTime.Today.Year - YearOfBirth >= 18;
     }
 }
