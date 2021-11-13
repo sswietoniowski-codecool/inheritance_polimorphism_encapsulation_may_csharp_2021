@@ -20,8 +20,13 @@ namespace csharp_oop_1_demo
             foreach (var p in people)
             {
                 Console.WriteLine(p.GetType());
+                Console.WriteLine("---");
                 p.WhoAmI();
+                Console.WriteLine("---");
+                Console.WriteLine(p);
             }
+
+            Dummy d = new Dummy();
         }
 
         public void PrintHello(Person p)

@@ -28,11 +28,9 @@ namespace csharp_oop_1_demo
 
         public decimal Salary { get; set; }
 
-        public override void WhoAmI()
+        public override string ToString()
         {
-            //Console.WriteLine($"My Name is {LastName}. {FirstName} {LastName}.");
-            base.WhoAmI();
-            Console.WriteLine($"Salary = {Salary}");
+            return base.ToString() + $"{Environment.NewLine}Salary: {Salary}";
         }
     }
 }
