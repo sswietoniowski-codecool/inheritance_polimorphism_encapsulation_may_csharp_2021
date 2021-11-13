@@ -10,7 +10,7 @@ namespace csharp_oop_1_demo
             List<Person> people = new List<Person>();
 
             Employee employee = new Employee("Jan", "Kowalski", 1981, 5000);
-            employee.WhoAmIWithSalary();
+            employee.WhoAmI();
             Person person = new Person("Anna", "Nowak", 1982);
             person.WhoAmI();
 
@@ -19,6 +19,7 @@ namespace csharp_oop_1_demo
 
             foreach (var p in people)
             {
+                Console.WriteLine(p.GetType());
                 p.WhoAmI();
             }
         }

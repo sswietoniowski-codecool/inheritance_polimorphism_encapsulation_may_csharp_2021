@@ -28,7 +28,7 @@ namespace csharp_oop_1_demo
 
         public decimal Salary { get; set; }
 
-        public void WhoAmIWithSalary()
+        public new void WhoAmI()
         {
             //Console.WriteLine($"My Name is {LastName}. {FirstName} {LastName}.");
             base.WhoAmI();
