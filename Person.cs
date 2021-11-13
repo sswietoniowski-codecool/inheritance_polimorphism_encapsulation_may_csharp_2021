@@ -44,7 +44,7 @@ namespace csharp_oop_1_demo
             Console.WriteLine("Wywołano konstruktor bezparametrowy z Person");
         }
 
-        public void WhoAmI()
+        public virtual void WhoAmI()
         {
             //Console.WriteLine("My Name is " + LastName + ". " + FirstName + " " + LastName + ".");
             Console.WriteLine($"My Name is {LastName}. {FirstName} {LastName}.");

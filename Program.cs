@@ -23,5 +23,10 @@ namespace csharp_oop_1_demo
                 p.WhoAmI();
             }
         }
+
+        public void PrintHello(Person p)
+        {
+            p.WhoAmI();
+        }
     }
 }
