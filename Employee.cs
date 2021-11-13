@@ -27,5 +27,10 @@ namespace csharp_oop_1_demo
         }
 
         public decimal Salary { get; set; }
+
+        public override string ToString()
+        {
+            return base.ToString() + $"{Environment.NewLine}Salary: {Salary}";
+        }
     }
 }
