@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DummyLibrary;
 
 namespace csharp_oop_1_demo
 {
@@ -7,14 +8,15 @@ namespace csharp_oop_1_demo
     {
         static void Main(string[] args)
         {
-            List<Employee> employees = new List<Employee>();
-            employees.Add(new Employee("Jan", "Kowalski", 1990, 5000));
-            employees.Add(new Manager("Adam", "Nowak", 1990, 5000));
+            Person person = new Person("Jan", "Kowalski", 1990);
+            //person.LastName = "Nowak";
 
-            foreach (var e in employees)
-            {
-                Console.WriteLine(e);
-            }
+            DummyPublic dummy1 = new DummyPublic();
+//            DummyInternal dummy2 = new DummyInternal();
+
+            // protected internal
+
+            // private protected
         }
     }
 }

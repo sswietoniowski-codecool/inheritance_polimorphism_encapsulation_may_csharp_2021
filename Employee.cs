@@ -33,7 +33,7 @@ namespace csharp_oop_1_demo
             return base.ToString() + $"{Environment.NewLine}Salary: {GetSalary()}";
         }
 
-        public virtual decimal GetSalary()
+        protected virtual decimal GetSalary()
         {
             return Salary;
         }

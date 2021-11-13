@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace csharp_oop_1_demo
 {
-    class Person
+    public class Person
     {
         private string _firstName;
-        public string FirstName
+        protected string FirstName
         {
             get
             {
@@ -21,7 +21,7 @@ namespace csharp_oop_1_demo
             }
 
         }
-        public string LastName { get; set; }
+        protected string LastName { get; set; }
         public int YearOfBirth { get; set; }
 
         public Person(string firstName, string lastName, int yearOfBirth)

@@ -15,7 +15,7 @@ namespace csharp_oop_1_demo
             Console.WriteLine("Wywołano konstruktor z parametrami z Manager");
         }
 
-        public override decimal GetSalary()
+        protected override decimal GetSalary()
         {
             return Salary * 1.1m;
         }
