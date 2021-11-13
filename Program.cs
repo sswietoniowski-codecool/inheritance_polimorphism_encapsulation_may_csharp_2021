@@ -7,25 +7,20 @@ namespace csharp_oop_1_demo
     {
         static void Main(string[] args)
         {
-           
-            List<Animal> animals = new List<Animal>();
-            animals.Add(new Dog("Reksio"));
-            animals.Add(new Dog("Pluto"));
-            animals.Add(new Cat("Filek"));
+            List<Person> people = new List<Person>();
 
-            foreach (var animal in animals)
+            Employee employee = new Employee("Jan", "Kowalski", 1981, 5000);
+            employee.WhoAmIWithSalary();
+            Person person = new Person("Anna", "Nowak", 1982);
+            person.WhoAmI();
+
+            people.Add(employee);
+            people.Add(person);
+
+            foreach (var p in people)
             {
-                if (animal is Cat)
-                {
-                    Console.WriteLine($"{animal.Name} is cat.");
-                }
-                else if (animal is Dog)
-                {
-                    Console.WriteLine($"{animal.Name} is dog.");
-                }
-                animal.MakeSound();
+                p.WhoAmI();
             }
         }
-    
     }
 }
