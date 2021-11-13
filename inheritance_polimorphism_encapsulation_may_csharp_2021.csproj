@@ -7,8 +7,4 @@
     <AssemblyName>csharp_oop_1_demo</AssemblyName>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DummyLibrary\DummyLibrary.csproj" />
-  </ItemGroup>
-
 </Project>
