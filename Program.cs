@@ -7,11 +7,13 @@ namespace csharp_oop_1_demo
     {
         static void Main(string[] args)
         {
-            Receipt receipt = new Receipt();
-            receipt.AddItem(new OrderItem("bread", 5, 3.5m));
-            receipt.AddItem(new OrderItemWithPackage("milk", 5, 2.2m, "bottle", 
-                1));
-            receipt.Display();
+            BankManager bank = new BankManager();
+
+            bank.AddAccount(new Account(1500));
+            bank.AddAccount(new Account(-150));
+            bank.AddAccount(new SavingAccount(1000, 100));
+
+            Console.WriteLine($"Total balance is: {bank.GetTotalBalance()}");
         }
     }
 }
