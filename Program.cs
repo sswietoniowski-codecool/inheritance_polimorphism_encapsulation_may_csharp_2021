@@ -7,7 +7,7 @@ namespace csharp_oop_1_demo
     {
         static void Main(string[] args)
         {
-            BankManager bank = new BankManager();
+            /*BankManager bank = new BankManager();
 
             Account account1 = new Account();
             account1.IncreaseBalance(500);
@@ -25,7 +25,25 @@ namespace csharp_oop_1_demo
             bank.AddAccount(savaccount1);
 
 
-            Console.WriteLine($"Total balance is: {bank.GetTotalBalance()}");
+            Console.WriteLine($"Total balance is: {bank.GetTotalBalance()}");*/
+
+            BasicAccount account1 = new BasicAccount(AccountType.Current);
+            account1.IncreaseBalance(500);
+
+            BasicAccount account2 = new BasicAccount(AccountType.Current);
+            account2.IncreaseBalance(2000);
+
+            BasicAccount account3 = new BasicAccount(AccountType.Saving);
+            account3.IncreaseBalance(5000);
+            account3.IncreaseInterests(300);
+
+            BasicBankManager basicBank = new BasicBankManager();
+            basicBank.AddAccount(account1);
+            basicBank.AddAccount(account2);
+            basicBank.AddAccount(account3);
+
+            Console.WriteLine($"Total balance is: {basicBank.GetTotalBalance()}");
+
         }
     }
 }
