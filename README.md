@@ -1,0 +1,3 @@
+# inheritance_polimorphism_encapsulation_may_csharp_2021
+
+![diagram](https://www.plantuml.com/plantuml/svg/JP4v3iCW44NxEGKNI16lKeh8MUj4oWKmfa1om86XyEs36JiP2dZwJupueWieFSRt25CwZJAJj2WUZ6KGT-T0AdHUq3en9hs7taKxI3ylsPan-GAKi-ZTcEzS69ClGLiqEDFC6sFo5GmIPI-3Nh8hO_9rcZ-EMg5nDgJvVoRVm2VggDStFncJRo5jOdVCNSH1l9oWmYmlAD-ACbEIMIioKP6WRYolATywCTDietuDc6opoqsWqtP8t_O5 "diagram")

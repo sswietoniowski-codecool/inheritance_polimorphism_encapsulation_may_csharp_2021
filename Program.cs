@@ -15,6 +15,5 @@ namespace csharp_oop_1_demo
 
             Console.WriteLine($"Total balance is: {bank.GetTotalBalance()}");
         }
-
     }
 }

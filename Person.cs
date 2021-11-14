@@ -5,7 +5,7 @@ namespace csharp_oop_1_demo
     public class Person
     {
         private string _firstName;
-        public string FirstName
+        protected string FirstName
         {
             get
             {
@@ -17,7 +17,7 @@ namespace csharp_oop_1_demo
             }
 
         }
-        public string LastName { get; set; }
+        protected string LastName { get; set; }
         public int YearOfBirth { get; set; }
 
         public Person(string firstName, string lastName, int yearOfBirth)
@@ -42,7 +42,7 @@ namespace csharp_oop_1_demo
 
         public void WhoAmI()
         {
-            Console.WriteLine(this);
+            Console.WriteLine(this.ToString());
         }
 
         public override string ToString()
