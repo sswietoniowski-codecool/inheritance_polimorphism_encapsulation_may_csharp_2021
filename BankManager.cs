@@ -16,15 +16,7 @@ namespace csharp_oop_1_demo
             int totalBalance = 0;
             foreach (Account account in accounts)
             {
-                if (account is SavingAccount s)
-                {
-                    totalBalance += s.Balance + s.Interests;
-                }
-                else
-                {
-                    totalBalance += account.Balance;
-                }
-
+                totalBalance += account.GetTotalBalance();
             }
 
             return totalBalance;
